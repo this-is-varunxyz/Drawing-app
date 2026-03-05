@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Welcome to Flutter",
       theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: false),
-      initialRoute: "/", // Tells the app to start at the '/' route
+      initialRoute: "/", 
       routes: {
-        '/': (context) => const Splashscreen(), // Handles the initial route
+        '/': (context) => const Splashscreen(), 
         '/home': (context) => const Homescreen(),
-        '/draw': (context) => const Drawscreen(),
+        '/draw': (context) => const DrawScreen(),
       },
     );
   }

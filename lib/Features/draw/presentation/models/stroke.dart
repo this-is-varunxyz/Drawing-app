@@ -1,8 +1,15 @@
 import 'dart:ui';
-class Stroke{
-  final List<Offset> points;
+
+class Stroke {
+  final Path path;
   final Color color;
   final double brushSize;
-  Stroke({required this.points,required this.color, required this.brushSize});
+  final bool isEraser;
 
+  Stroke({
+    required this.path,
+    required this.color,
+    required this.brushSize,
+    this.isEraser = false,
+  });
 }
